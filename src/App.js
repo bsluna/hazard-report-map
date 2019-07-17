@@ -35,13 +35,7 @@ import 'react-leaflet-search/src/react-leaflet-search.css';
 import { popupContent, popupHead, popupSubHead, popupText } from "./popupStyles";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyD007QLEPXXAyyUhR670glSifJKJRQp9Kw",
-  authDomain: "hazard-report-map.firebaseapp.com",
-  databaseURL: "https://hazard-report-map.firebaseio.com",
-  projectId: "hazard-report-map",
-  storageBucket: "",
-  messagingSenderId: "398213408056",
-  appId: "1:398213408056:web:404a81ab2376712e"  
+  //firebase config 
 });
 
 const db = firebaseApp.firestore();
