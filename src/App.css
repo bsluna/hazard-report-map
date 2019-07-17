@@ -1,33 +1,186 @@
-.App {
+body{
+  margin: 0px;
+  width: 100vw;
+  /*height: 100vh;*/
+}
+
+#root{
+  width: 100%;
+}
+
+.map{
+  height: 85vh;
+  /*height: 100%;*/
+}
+
+.map-form{
+  height: 300px;
+}
+
+.header{
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  height: 65px;
+  z-index: 1001;	
+}
+
+/* .marker-cluster-custom{
+  background: transparent;
+  border: 0px transparent;
+  margin-left: -10px;
+  margin-top: -34px;
+  background-image:url(/markers/marker_grey.png);
+  background-size: 29px 35px;
+} */
+
+.flex-container {
+  display: flex;
+  /* background-color: DodgerBlue; */
+}
+
+.request-popup .leaflet-popup-content-wrapper {
+  border-radius: 0px;
+}
+
+.marker-cluster-custom-span{
+  display:table;
+  /* margin-top: 5px;
+  margin-left: 7.5px; */
+  margin: 0 auto;
+  margin-top: 5px;
+
+}
+/******************/
+.container {
+  width: 100px;
+  position: relative;
+}
+
+.marker-image {
+  opacity: 1;
+  height: 100px;
+  display: block;
+  width: 100px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin-left: -15px;
+  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container:hover .marker-image {
+  opacity: 0.3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
   color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/******************/
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#add-report{
+  background-color: white;
+  border-color: darkgray;
+  border-width: 2px;
+  color: black;
+}
+#hrm-logo{
+  background-color: white;
+  border-color: darkgray;
+  border-width: 2px;
+  color: black;
+}
+h4{
+  margin-bottom: -2.5px;
+  margin-top: -2.5px;
+}
+h5{
+  margin-bottom: -2.5px;
+  margin-top: -2.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.leaflet-control-layers-overlays{
+  background-image:url(/markers/overlay-control-bg.png);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hrm-logo{
+  border: 2px solid darkgray;
+}
+
+.marker-cluster-custom-Typhoon{
+  background: transparent;
+  background-image:url(/markers/marker_amber.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-Drought{
+  background: transparent;
+  background-image:url(/markers/marker_blue.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-ElNiño{
+  background: transparent;
+  background-image:url(/markers/marker_bluegrey.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-LaNiña{
+  background: transparent;
+  background-image:url(/markers/marker_brown.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-Earthquake{
+  background: transparent;
+  background-image:url(/markers/marker_deeporange.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-Landslide{
+  background: transparent;
+  background-image:url(/markers/marker_deeppurple.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-Tsunami{
+  background: transparent;
+  background-image:url(/markers/marker_teal.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-VolcanicHazard{
+  background: transparent;
+  background-image:url(/markers/marker_pink.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-PestInfestation{
+  background: transparent;
+  background-image:url(/markers/marker_lime.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-SaraiAdvisory{
+  background: transparent;
+  background-image:url(/markers/marker_lightgreen.png);
+  background-size: 29px 35px;
+}
+.marker-cluster-custom-SaraiCommunity{
+  background: transparent;
+  background-image:url(/markers/marker_green.png);
+  background-size: 29px 35px;
 }
